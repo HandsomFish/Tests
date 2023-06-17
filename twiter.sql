@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : dim. 07 mai 2023 à 18:17
+-- Généré le : sam. 17 juin 2023 à 14:47
 -- Version du serveur : 8.0.30
 -- Version de PHP : 8.1.10
 
@@ -18,8 +18,49 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+-- Base de données : `portail_restart`
+--
+CREATE DATABASE IF NOT EXISTS `portail_restart` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `portail_restart`;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `cours`
+--
+
+CREATE TABLE `cours` (
+  `id` int NOT NULL,
+  `nom` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `enseignant` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `note` varchar(6) COLLATE utf8mb4_general_ci NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `cours`
+--
+ALTER TABLE `cours`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `cours`
+--
+ALTER TABLE `cours`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
 -- Base de données : `twitter`
 --
+CREATE DATABASE IF NOT EXISTS `twitter` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `twitter`;
 
 -- --------------------------------------------------------
 
@@ -51,7 +92,14 @@ INSERT INTO `tweets` (`id`, `contenu`) VALUES
 (18, 'you '),
 (19, 'you '),
 (20, 'you and me '),
-(21, 'me and you ');
+(21, 'me and you '),
+(22, 'Red'),
+(25, 'Blue'),
+(26, 'Green'),
+(27, 'White'),
+(28, 'Red Green Blue '),
+(29, 'Red Green'),
+(30, 'I love that i can type anything and it will all fit nicely thanks to my insane css skills');
 
 -- --------------------------------------------------------
 
@@ -101,7 +149,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `tweets`
 --
 ALTER TABLE `tweets`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
