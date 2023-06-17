@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 1.1rem;
+}
+
+.header{
+    color: white;
+    background-color: #1DA1F2;
+}
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #1DA1F2;
+    border-radius: 5%;
+    position: relative;
+    cursor: pointer;
+    left: 95%;
+    
+}
+
+.burger-menu {
+    position: relative;
+    top: 32%;
+}
+
+.burger-menu:hover {
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.navbar {
+    width: 0px;
+    height: 0px;
+    background-color: #FFBABA;
+    border-radius: 5%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.nav-open {
+    width: 200px;
+    height: 200px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.nav-item {
+    display: block;
+    height: 50px;
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 15px;
+    transition: height 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    color: black;
+}
+
+
+.searchBars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+input{
+    margin-top: 3rem;
+    width: 25rem;
+    height: 3rem;
+}
+
+.tweets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.id{
+    font-size: 1.5rem;
+}
+
+.content{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 25rem;
+    height: fit-content;
+    font-size: 1.1rem;
+}
+
+.id-content{
+    padding: 5rem;
+}
+
+form{
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    border: 2px solid  black;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #1DA1F2;
+    color: white;
+    border: 2px solid white;
+    font-size: 2rem;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #1DA1F2;
+}
+
+.contact-button {
+    padding: 2vh;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.contact-button:hover {
+    color: white;
+    background-color: #1DA1F2;
+}
+
+li {
+    padding: 0.5vh 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
